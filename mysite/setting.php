@@ -4,5 +4,3 @@ $user = 'root';
 $pass = 'root';
 $data = 'test';
 
-?>
-
