@@ -9,8 +9,8 @@
 </head>
 <body>
 <div class="container mt-10">
-<header>
+<header class="mt-5">
     <nav>
-        <a href="index.php">Главная</a>|<a href="about.php">О нас</a>
+        <a href="index.php">Главная</a>|<a href="about.php">О нас</a>|<a href="contacts.php">Контакты</a>
     </nav>
 </header>
