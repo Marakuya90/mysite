@@ -1,4 +1,7 @@
 <?php
+
+use JetBrains\PhpStorm\NoReturn;
+
 session_start();
 
 unset($_SESSION["username"]);
@@ -9,9 +12,10 @@ unset($_SESSION['error_username']);
 unset($_SESSION['error_message']);
 unset($_SESSION['error_email']);
 unset($_SESSION['error_subject']);
-function redirect()
+unset($_SESSION['success_mail']);
+#[NoReturn] function redirect()
 {
-    header("Location: ../contacts.php");
+    header("Location: ../pages/about.php");
     exit();
 }
 
@@ -26,6 +30,7 @@ $_SESSION['username'] = $username;
 $_SESSION['email'] = $email;
 $_SESSION['subject'] = $subject;
 $_SESSION['message'] = $message;
+
 
 if (strlen($username) <= 1) {
     $_SESSION["error_username"] = 'Введите корректное имя!';
@@ -48,3 +53,5 @@ if (strlen($username) <= 1) {
     $_SESSION['success_mail'] = "Вы успешно отправили письмо!";
     redirect();
 }
+session_destroy();
+

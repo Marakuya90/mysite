@@ -13,4 +13,7 @@
     <nav>
         <a href="index.php">Главная</a>|<a href="about.php">О нас</a>|<a href="contacts.php">Контакты</a>
     </nav>
+    <div class="enter">
+        <a class="btn btn-light" href="../pages/registration.html">Вход</a>
+    </div>
 </header>

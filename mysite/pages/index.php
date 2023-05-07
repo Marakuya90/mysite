@@ -1,10 +1,10 @@
 <?php
 $title = "Главная";
-require "blocks/header.php";
+require "../blocks/header.php";
 ?>
     <h1 class="mt-5"><?=$title?></h1>
 
-    <form action="./controllers/check_post.php" method="POST" class="mt-5">
+    <form action="../controllers/check_post.php" method="POST" class="mt-5">
         <input type="text" name="username" placeholder="Введите имя" class="form-control"><br>
         <input type="password" name="password" placeholder="Введите пароль" class="form-control"><br>
         <input type="email" name="email" placeholder="Email" class="form-control"><br>
@@ -12,5 +12,5 @@ require "blocks/header.php";
         <input type="submit" value="Отправить" class="btn btn-success">
     </form>
 <?php
-require "blocks/footer.php";
+require "../blocks/footer.php";
 ?>

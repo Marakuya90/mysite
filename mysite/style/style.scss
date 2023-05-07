@@ -1,0 +1,18 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_registration {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}

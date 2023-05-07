@@ -1,13 +1,13 @@
 <?php
 session_start();
 $title = "Контакты";
-require "blocks/header.php";
+require "../blocks/header.php";
 ?>
     <h1 class="mt-5"><?=$title?></h1>
 
 <div class="text-success"><?php if(!empty($_SESSION["success_mail"])) echo $_SESSION["success_mail"];?></div>
 
-    <form action="./controllers/check_contact.php" method="POST" class="mt-5">
+    <form action="../controllers/check_contact.php" method="POST" class="mt-5">
         <input type="text" name="username" placeholder="Введите имя" value="<?php if(!empty($_SESSION['username']))
             echo $_SESSION['username'];?>" class="form-control"><br>
         <div class="text-danger"><?php if(!empty($_SESSION["error_username"])) echo $_SESSION["error_username"];?></div><br>
@@ -27,5 +27,5 @@ require "blocks/header.php";
         <button class="btn btn-success">Отправить</button>
     </form>
 <?php
-require "blocks/footer.php";
+require "../blocks/footer.php";
 ?>  
