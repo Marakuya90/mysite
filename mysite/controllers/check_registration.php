@@ -22,5 +22,6 @@ $mysql = new mysqli('localhost', 'root', 'root', "register_db");
 $mysql->query("INSERT INTO `users` (`name`, `login`, `password`) 
     VALUES ('$name','$login','$password')");
 echo "Вы успешно зарегистрированы!";
+
 header('Location: ../pages/index.php');
 

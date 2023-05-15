@@ -11,8 +11,14 @@ header {
   justify-content: space-between;
 }
 
-.form_registration {
+.form_user {
   display: flex;
   flex-direction: column;
   width: 500px;
+}
+.hidden {
+  display: none;
+}
+.unhidden {
+  display: block;
 }
